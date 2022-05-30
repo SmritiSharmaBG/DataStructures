@@ -10,7 +10,6 @@ public class InfixToPostfix {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("enter the infix expression");
         String line = br.readLine();
-        String[] str = line.trim().split(" ");
         String ans = findPostfix(line);
         System.out.print("the equivalent postfix solution is = " + ans);
     }
