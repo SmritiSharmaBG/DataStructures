@@ -1,4 +1,7 @@
 # DataStructures
-Solution of DS Problems of HackerEarth
 
-This repo contains my solutions of the problems related to Data Structures questions on HackerRank, GFG, leetcode etc.
+This repo contains my solutions of the problems related to _**standard questions**_ of Data Structures.
+
+Topics covered - 
+Stack
+Queue
