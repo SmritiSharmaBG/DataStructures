@@ -41,6 +41,17 @@ public class CycleDetectionUsingBFS {
      * Instead of storing only one number, we store a Pair of numbers i.e. node and its parent
      * when a node is visited, check if the parent (in queue) is different from the parent it actually came from (adj list)
      * if different, then it means that cycle is present
+     * Why ? : Because here we are talking about un-directed Graph. if 1 is adj to 2, then 2 is adj to 1 as well.
+     * So, when checking visited array of 1 (line 68), we see it as visited, it doesn't mean there is a cycle there. 
+     *                                       1 -- 2 (element)
+     *                                   (parent)
+     * It simply means 2 came from 1 while traversal. This is the reason why we keep a parent.  
+     * Cycle is there when somehow 1 is visited, and also, 1 was not the parent of 2 (line 72)
+     *
+     *                                         3 ( parent )
+     *                                         |
+     *                                    1 -- 2 ( element )
+     *                                (visited)
      *
      * @param start the initial starting point
      * @return true if cycle present else false
